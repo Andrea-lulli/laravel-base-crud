@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <div class="logo">
+        <div class="li-nav">
             <a href="{{ route('home') }}">
-              HOME
+                HOME
             </a>
         </div>
 

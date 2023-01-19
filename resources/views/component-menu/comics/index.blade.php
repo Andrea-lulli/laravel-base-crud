@@ -9,8 +9,8 @@
             <div class="card">
                  <a href="{{ route('comics.show' , $elem->id)}}">
                 <div>
-                    <img src="{{$elem['thumb']}}" alt="">
-                </div>
+
+                </div><img src="{{$elem['thumb']}}" alt="">
                 <p class="title">{{ $elem['title'] }}</p>
             </a>
             </div>

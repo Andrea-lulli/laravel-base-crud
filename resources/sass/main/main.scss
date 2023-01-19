@@ -1,0 +1,49 @@
+.card {
+    flex-basis: 30%;
+    margin: 30px 0;
+    background-color: black !important;
+}
+
+.box-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+main {
+    background-color: black;
+}
+
+div img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: top;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    background-color: black;
+    height: 400px;
+    color: white;
+    text-align: center;
+}
+
+a {
+    text-decoration: none !important;
+}
+

@@ -1,15 +1,24 @@
 @extends('layouts.layouts')
 
 
+
 @section('main-content')
-<div class="text-center">
-    <img src="{{$elem['thumb']}}" alt="">
-</div>
-    <h5 class="text-center">{{$elem->title}}</h5>
-    <div>
-        <p class="text-center">
+    <div class="box-singolo">
+        <div class="card-singole">
+            <div>
+                <img src="{{$elem['thumb']}}" alt="">
+            </div>
+
+            <p class="title-singole">{{ $elem['title'] }}</p>
+
+            <p class="title-singole">Decscrizione: {{ $elem['description'] }}</p>
+
+
+        </div>
+        <p >
             PREZZO: {{$elem->price}}
         </p>
-    </div>
 
+        <a href="{{ route('home')}}">&#x21A9</a>
+    </div>
 @endsection
