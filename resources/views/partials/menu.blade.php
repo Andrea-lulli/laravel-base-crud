@@ -14,7 +14,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item li-nav">
-                    <a class="nav-link active" aria-current="page" href="">CHARACTERS</a>
+                    <a class="nav-link active" aria-current="page" href="{{route('comics.create')}}">CREATE</a>
                 </li>
                 <li class="nav-item li-nav">
                     <a class="nav-link" href="{{ route('comics.index') }}">COMICS</a>

@@ -29,7 +29,7 @@ class ComicController extends Controller
      */
     public function create()
     {
-
+        return view('component-menu.comics.create');
     }
 
     /**
@@ -40,7 +40,22 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+
+        $new_record = new Comic();
+        $new_record->title = $data['title'];
+        $new_record->description = $data['description'];
+        $new_record->thumb = $data['thumb'];
+         $new_record->price = $data['price'];
+        $new_record->series = $data['series'];
+        $new_record->sale_date = $data['sale_date'];
+        $new_record->type = $data['type'];
+        $new_record->save();
+
+
+
+
+        return redirect()->route('comics.index');
     }
 
     /**
