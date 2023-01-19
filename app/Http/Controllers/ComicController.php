@@ -46,7 +46,7 @@ class ComicController extends Controller
         $new_record->title = $data['title'];
         $new_record->description = $data['description'];
         $new_record->thumb = $data['thumb'];
-         $new_record->price = $data['price'];
+        $new_record->price = $data['price'];
         $new_record->series = $data['series'];
         $new_record->sale_date = $data['sale_date'];
         $new_record->type = $data['type'];
