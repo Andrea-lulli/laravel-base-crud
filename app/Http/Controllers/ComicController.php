@@ -44,7 +44,13 @@ class ComicController extends Controller
 
         $request->validate(
             [
-                'title' => 'required|max:100'
+                'title' => 'required|max:100',
+                'description' => 'required|max:500',
+                'thumb' => 'required|max:500',
+                'price' => 'required|max:100',
+                'series' => 'required|max:100',
+                'sale_date' => 'required|max:100',
+                'type' => 'required|max:100'
             ],
             [
                 'title.required' => 'Attenzione il campo title è obbligatorio',
@@ -90,6 +96,9 @@ class ComicController extends Controller
     public function edit($id)
     {
         $comics = Comic::findOrFail($id);
+
+
+
 
         return view('component-menu.comics.edit', compact('comics'));
     }
