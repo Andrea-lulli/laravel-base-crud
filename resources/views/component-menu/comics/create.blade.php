@@ -4,7 +4,7 @@
 @section('main-content')
     <h1 class="text-center">Form per la Create</h1>
 
-    <form method="POST" action="{{ route('comics.store') }}">
+    <form  class="text-light" method="POST" action="{{ route('comics.store') }}">
 
         @csrf
 

@@ -100,8 +100,10 @@ class ComicController extends Controller
      * @param  \App\Models\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Comic $comic)
+    public function destroy($id)
     {
-        //
+        $comic = Comic::findOrFail($id);
+        $comic->delete();
+        return redirect()->route('comics.index')->with('success', "Hai cancellato con successo la card: $comic->title");
     }
 }
