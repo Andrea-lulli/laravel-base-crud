@@ -27,9 +27,9 @@ div img {
     width: 100%;
     aspect-ratio: 1/1;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     -o-object-position: top;
-       object-position: top;
+    object-position: top;
 }
 
 * {
@@ -50,14 +50,15 @@ a {
     color: var(--bs-nav-link-color) !important;
 }
 
-.jumbotron{
+.jumbotron {
     background-image: url('../images/jumbotron.jpg');
     height: 250px;
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.logo img{
+
+.logo img {
     width: 40%;
 }
 
@@ -68,12 +69,12 @@ a {
 
 }
 
-.li-nav:hover{
+.li-nav:hover {
     border-bottom: 4px solid rgba(2, 130, 249, 255);
 
 }
 
-.li-nav{
+.li-nav {
 
     border-bottom: 4px solid white;
 
@@ -81,8 +82,9 @@ a {
 
 .icon img {
     width: 3%;
-    margin: 0 3px ;
-  }
+    margin: 0 3px;
+}
+
 .card-singole img {
     margin: 40px 0 0 0;
     width: 100%;
@@ -108,81 +110,94 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-  }
-  .conteiner {
+}
+
+.conteiner {
     width: 80%;
     display: flex;
     color: grey;
-  }
-  .DcComics {
+}
+
+.DcComics {
     display: flex;
     flex-basis: 40%;
     margin: 35px 0;
-  }
-  .img-logo {
+}
+
+.img-logo {
     flex-basis: 60%;
     display: flex;
     background-image: url('../images/dc-logo-bg.png');
     background-repeat: no-repeat;
     background-position: center;
-    img {
-      width: 50%;
-    }
-  }
-  ul {
+
+}
+
+.img-logo img {
+    width: 50%;
+}
+
+
+
+ul {
     list-style-type: none;
 
-  }
-  li {
+}
+
+li {
     margin: 8px 0px;
     margin-right: 25px;
     font-size: 12px;
-  }
-  .titolo {
+}
+
+.titolo {
     color: white;
     font-weight: 700;
     font-size: 16px;
     margin: 10px 0;
-  }
-  .footer-icon {
+}
+
+.footer-icon {
     background-color: rgba(48, 48, 48, 255);
     width: 100%;
     padding: 20px 0;
     display: flex;
     justify-content: center;
-    .flex {
-      display: flex;
-      width: 80%;
-      align-items: center;
-    }
-  }
-  .sign-up {
+
+}
+
+.flex {
+    display: flex;
+    width: 80%;
+    align-items: center;
+}
+
+.sign-up {
     flex-basis: 20%;
     display: flex;
     justify-content: start;
-  }
-  .icon {
+}
+
+.icon {
     flex-basis: 79%;
     display: flex;
     justify-content: end;
     align-items: center;
-  }
-  div {
-    span {
-      color: rgba(2, 130, 249, 255);
-      margin-right: 10px;
-      font-weight: 800;
-      font-size: 20px;
-    }
-    img {
-      margin: 0 8px;
-    }
-  }
-  div {
-    a {
-      border: 2px solid rgba(2, 130, 249, 255);
-      padding: 10px 10px;
-      color: white;
-    }
-  }
+}
 
+div span {
+    color: rgba(2, 130, 249, 255);
+    margin-right: 10px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+img {
+    margin: 0 8px;
+}
+
+div a {
+    border: 2px solid rgba(2, 130, 249, 255);
+    padding: 10px 10px;
+    color: white;
+}
