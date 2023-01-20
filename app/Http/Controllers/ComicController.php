@@ -65,7 +65,7 @@ class ComicController extends Controller
 
 
 
-        return redirect()->route('comics.index');
+        return redirect()->route('comics.index')->with('success', "Hai creato con successo il comic: $new_record->title");
     }
 
     /**

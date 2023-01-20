@@ -8,6 +8,8 @@ Comics- Create
 @section('main-content')
     <h1 class="text-center text-light">Form per la Create</h1>
 
+
+
     <a href="{{ route('comics.index') }}">
         <button type="submit" class="btn btn-primary">Indietro</button>
     </a>
