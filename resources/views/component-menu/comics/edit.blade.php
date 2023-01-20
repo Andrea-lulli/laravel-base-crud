@@ -1,5 +1,9 @@
 @extends('layouts.layouts')
 
+@section('title-page')
+Comics- Edit
+@endsection
+
 
 @section('main-content')
     <h1 class="text-center text-light">Form per l'edit</h1>

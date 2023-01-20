@@ -1,5 +1,9 @@
 @extends('layouts.layouts')
 
+@section('title-page')
+Comics- Index
+@endsection
+
 @section('main-content')
     @if (session('success'))
         <div class="alert alert-success">
@@ -17,7 +21,7 @@
                     </div><img src="{{ $elem['thumb'] }}" alt="">
                     <p class="title">{{ $elem['title'] }}</p>
                 </a>
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center align-items-center">
                     <form class="mx-2" action="{{ route('comics.destroy', $elem->id) }}" method="POST">
                         @csrf
                         @method('DELETE')
@@ -25,7 +29,7 @@
                             <i class="fa-solid fa-xmark"></i>
                         </button>
                     </form>
-                    <div class="mx-2">
+                    <div class="mx-2 text-white">
                         <a href="{{route('comics.edit', $elem->id)}}">
                              <i class="fa-solid fa-pen"></i>
                         </a>

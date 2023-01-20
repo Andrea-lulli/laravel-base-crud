@@ -51,8 +51,8 @@
   <!-- ultimo footer con icone -->
   <div class="footer-icon">
     <div class="conteiner flex">
-      <div class="sign-up">
-        <a>SIGN-UP NOW!</a>
+      <div class="sign-up a-ft">
+        <a class="">SIGN-UP NOW!</a>
       </div>
       <div class="icon">
         <span>FOLLOW US</span>

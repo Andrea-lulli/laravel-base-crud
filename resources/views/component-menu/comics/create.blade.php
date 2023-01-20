@@ -1,5 +1,9 @@
 @extends('layouts.layouts')
 
+@section('title-page')
+Comics- Create
+@endsection
+
 
 @section('main-content')
     <h1 class="text-center text-light">Form per la Create</h1>

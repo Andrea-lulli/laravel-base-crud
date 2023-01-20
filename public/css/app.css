@@ -27,9 +27,9 @@ div img {
     width: 100%;
     aspect-ratio: 1/1;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
     -o-object-position: top;
-    object-position: top;
+       object-position: top;
 }
 
 * {
@@ -50,15 +50,14 @@ a {
     color: var(--bs-nav-link-color) !important;
 }
 
-.jumbotron {
+.jumbotron{
     background-image: url('../images/jumbotron.jpg');
     height: 250px;
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-.logo img {
+.logo img{
     width: 40%;
 }
 
@@ -69,12 +68,12 @@ a {
 
 }
 
-.li-nav:hover {
+.li-nav:hover{
     border-bottom: 4px solid rgba(2, 130, 249, 255);
 
 }
 
-.li-nav {
+.li-nav{
 
     border-bottom: 4px solid white;
 
@@ -82,9 +81,8 @@ a {
 
 .icon img {
     width: 3%;
-    margin: 0 3px;
-}
-
+    margin: 0 3px ;
+  }
 .card-singole img {
     margin: 40px 0 0 0;
     width: 100%;
@@ -196,8 +194,8 @@ img {
     margin: 0 8px;
 }
 
-div a {
-    border: 2px solid rgba(2, 130, 249, 255);
+.a-ft {
+
     padding: 10px 10px;
     color: white;
 }
