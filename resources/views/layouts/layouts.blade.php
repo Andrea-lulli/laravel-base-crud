@@ -24,7 +24,7 @@
         @yield('main-content')
     </main>
     <footer>
-        {{-- @include('partials.footer') --}}
+        @include('partials.footer')
     </footer>
 
 

@@ -2,7 +2,11 @@
 
 
 @section('main-content')
-    <h1 class="text-center">Form per la Create</h1>
+    <h1 class="text-center text-light">Form per la Create</h1>
+
+    <a href="{{route('comics.index')}}">
+        <button type="submit" class="btn btn-primary">Indietro</button>
+    </a>
 
     @if ( $errors->any() )
     <div class="alert alert-danger my-3">
@@ -13,8 +17,8 @@
         </ul>
     </div>
 @endif
-
-    <form  class="text-light" method="POST" action="{{ route('comics.store') }}">
+<div class="d-flex justify-content-center ">
+    <form  class="text-light w-50" method="POST" action="{{ route('comics.store') }}">
 
         @csrf
 
@@ -54,5 +58,11 @@
         </div>
 
         <button type="submit" class="btn btn-primary">Crea record</button>
+
     </form>
+
+
+</div>
+
+
 @endsection

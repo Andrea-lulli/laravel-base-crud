@@ -47,6 +47,7 @@ div img {
 
 a {
     text-decoration: none !important;
+    color: var(--bs-nav-link-color) !important;
 }
 
 .jumbotron{
@@ -101,4 +102,87 @@ a {
     margin-bottom: 0rem;
     padding: 10px 0;
 }
+
+footer {
+    background-image: url('../images/footer-bg.jpg');
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .conteiner {
+    width: 80%;
+    display: flex;
+    color: grey;
+  }
+  .DcComics {
+    display: flex;
+    flex-basis: 40%;
+    margin: 35px 0;
+  }
+  .img-logo {
+    flex-basis: 60%;
+    display: flex;
+    background-image: url('../images/dc-logo-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    img {
+      width: 50%;
+    }
+  }
+  ul {
+    list-style-type: none;
+
+  }
+  li {
+    margin: 8px 0px;
+    margin-right: 25px;
+    font-size: 12px;
+  }
+  .titolo {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  .footer-icon {
+    background-color: rgba(48, 48, 48, 255);
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    .flex {
+      display: flex;
+      width: 80%;
+      align-items: center;
+    }
+  }
+  .sign-up {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: start;
+  }
+  .icon {
+    flex-basis: 79%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  div {
+    span {
+      color: rgba(2, 130, 249, 255);
+      margin-right: 10px;
+      font-weight: 800;
+      font-size: 20px;
+    }
+    img {
+      margin: 0 8px;
+    }
+  }
+  div {
+    a {
+      border: 2px solid rgba(2, 130, 249, 255);
+      padding: 10px 10px;
+      color: white;
+    }
+  }
 
