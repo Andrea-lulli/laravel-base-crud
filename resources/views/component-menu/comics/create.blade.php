@@ -4,6 +4,16 @@
 @section('main-content')
     <h1 class="text-center">Form per la Create</h1>
 
+    @if ( $errors->any() )
+    <div class="alert alert-danger my-3">
+        <ul>
+            @foreach ($errors->all() as $error )
+               <li>{{$error}}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+
     <form  class="text-light" method="POST" action="{{ route('comics.store') }}">
 
         @csrf

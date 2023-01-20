@@ -42,6 +42,16 @@ class ComicController extends Controller
     {
         $data = $request->all();
 
+        $request->validate(
+            [
+                'title' => 'required|max:100'
+            ],
+            [
+                'title.required' => 'Attenzione il campo title è obbligatorio',
+                'title.max' => 'Attenzione il campo non deve superare i 100 caratteri'
+            ]
+        );
+
         $new_record = new Comic();
         $new_record->title = $data['title'];
         $new_record->description = $data['description'];
@@ -77,9 +87,11 @@ class ComicController extends Controller
      * @param  \App\Models\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function edit(Comic $comic)
+    public function edit( $id)
     {
-        //
+        $comics = Comic::findOrFail($id);
+
+        return view('component-menu.comics.edit', compact('comics'));
     }
 
     /**
@@ -89,9 +101,13 @@ class ComicController extends Controller
      * @param  \App\Models\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Comic $comic)
+    public function update(Request $request, $id)
     {
-        //
+        $data = $request->all();
+        $comics = Comic::findOrFail($id);
+        $comics->update($data);
+
+        return redirect()->route('comics.show', $comics->id)->with('success', "Hai modificato con successo la card: $comics->title");
     }
 
     /**

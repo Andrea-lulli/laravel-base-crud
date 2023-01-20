@@ -19,6 +19,6 @@
             PREZZO: {{$elem->price}}
         </p>
 
-        <a href="{{ route('home')}}">&#x21A9</a>
+        <a href="{{ route('comics.index')}}">&#x21A9</a>
     </div>
 @endsection
